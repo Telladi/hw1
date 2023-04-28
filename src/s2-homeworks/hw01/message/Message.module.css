@@ -1,0 +1,34 @@
+.message {
+    text-align: right;
+}
+
+.imageAndText {
+
+}
+
+.imageAndText img {
+    width: 55px;
+    height: 55px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.text {
+
+}
+
+.text:after {
+
+}
+
+.name {
+
+}
+
+.messageText {
+
+}
+
+.time {
+
+}
