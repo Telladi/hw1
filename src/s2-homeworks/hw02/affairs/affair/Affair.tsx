@@ -1,5 +1,5 @@
 import React from 'react'
-import { AffairType } from '../../HW2'
+import {AffairType} from '../../HW2'
 import s from './Affair.module.css'
 import s2 from '../Affairs.module.css'
 
@@ -19,7 +19,7 @@ function Affair(props: AffairPropsType) {
         // далее из Affairs всплывет в HW2->
         // в HW2 находим deleteAffairCallback- это и есть наш клиент ->
         // deleteAffairCallback вызовет setAffairs(...) и   deleteAffair(...)
-    props.deleteAffairCallback(props.affair._id)
+        props.deleteAffairCallback(props.affair._id)
 
     }
 
@@ -40,8 +40,7 @@ function Affair(props: AffairPropsType) {
             </div>
             <div id={'hw2-priority-' + props.affair._id} hidden>
                 {/*создаёт студент*/}
-
-                {/**/}
+                {props.affair.priority}
             </div>
 
             <button
