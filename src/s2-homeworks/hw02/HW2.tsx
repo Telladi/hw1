@@ -37,17 +37,10 @@ const defaultAffairs: Array<AffairType> = [ // need to fix any
 
 // pure helper functions
 export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // need to fix any
-    switch (filter) {
-        case 'high' :
-            return affairs.filter(affair => affair.priority === 'high')
-        case 'low':
-            return affairs.filter(affair => affair.priority === 'low')
-        case 'middle':
-            return affairs.filter(affair => affair.priority === 'middle')
-        default:
-            return affairs
-
+   if( filter !== 'all') {
+       return affairs.filter(affairs => affairs.priority === filter)
     }
+   return affairs
 }
 
 
