@@ -52,7 +52,7 @@ export const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
 
         if (e.currentTarget.value) {
             setName(e.currentTarget.value)
-            error && setError('')
+           setError('')
         } else {
             setName(name)
             setError("Ошибка! Введите имя!")
